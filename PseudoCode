@@ -12,6 +12,17 @@ Print out result
 
 Activity 2
 _________________________
+initialize variable sumSize = 0;
+initialize variable input = 0;
+initialize variable totalSum = 0;
+
+Ask user sumSize "How many numbers do you want to add?"
+for i in range of (0-sumSize)
+  while(not isNumber(input))
+    Ask user input "Enter number: "
+      if (isNumber(input))
+        totalSum = totalSum + input
+Print out totalSum
 
 Activity 3
 _________________________
