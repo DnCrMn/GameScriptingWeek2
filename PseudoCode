@@ -32,24 +32,37 @@ Activity 3
 _________________________
 initialize variable finished = false
 initialize variable number = 0
-initialize variable totalSum = 0
 
 while not finished
-  Ask user number "Number:"
-  if (not isNumber(number))
+  Ask user input "Number:"
+  if (not isNumber(input))
     Print error message
   else
-    totalsum += number
-  Ask user input "Another number? (y/n)
+    number += input
+  Ask user input "Another number? (y/n)"
   if (input is not y AND not n)
-    Print error message
+    Print out error message
   else if (input is n)
       finished = true 
 
-Print out totalSum
+Print out number
 
 Activity 4
 _________________________
+initialize variable finished = false
+initialize variable maxNumber = 0
+
+while not finished
+  Ask user input "Max number:"
+  if (not isNumber(input))
+    Print out error message
+  else
+    Print out random number between 0 and maxNumber
+  Ask user input "Another number? (y/n)"
+  if (input is not y AND not n)
+    Print out error message
+  else if (input is n)
+      finished = true 
 
 Activity 5
 _________________________
