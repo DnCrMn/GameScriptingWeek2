@@ -14,19 +14,23 @@ Print out result
 
 Activity 2
 _________________________
-initialize variable sumSize = 0
-initialize variable input = 0
-initialize variable totalSum = 0
+initialize variable numOne = 0
+initialize variable numTwo = 0
+initialize variable sum = 0
 
-Ask user sumSize "How many numbers do you want to add?"
+do
+  Ask user numOne "Number 1:"
+  if (numOne is not a number)
+    Print out error message
+while (numOne is not a number)
 
-for i in range of (0-sumSize)
-  while(not isNumber(input))
-    Ask user input "Enter number: "
-      if (isNumber(input))
-        totalSum = totalSum + input
+do
+  Ask user numTwo "Number 2:"
+  if (numTwo is not a number)
+    Print out error message
+while (numTwo is not a number)
 
-Print out totalSum
+Print out sum
 
 Activity 3
 _________________________
@@ -34,15 +38,21 @@ initialize variable finished = false
 initialize variable number = 0
 
 while not finished
-  Ask user input "Number:"
-  if (not isNumber(input))
-    Print error message
-  else
+  do
+    Ask user input "Number:"
+    if (input is not a number)
+      Print error message
+  while (input is not a number)
+
     number += input
-  Ask user input "Another number? (y/n)"
-  if (input is not y AND not n)
-    Print out error message
-  else if (input is n)
+
+  do
+    Ask user input "Another number? (y/n)"
+    if (input is not y AND not n)
+      Print out error message
+  while (input is not y AND not n)
+
+  if (input is n)
       finished = true 
 
 Print out number
@@ -53,16 +63,37 @@ initialize variable finished = false
 initialize variable maxNumber = 0
 
 while not finished
-  Ask user input "Max number:"
-  if (not isNumber(input))
-    Print out error message
-  else
+  do
+    Ask user input "Max number:"
+    if (input is not a number)
+      Print out error message
+  while (input is not a number)
+
     Print out random number between 0 and maxNumber
-  Ask user input "Another number? (y/n)"
-  if (input is not y AND not n)
-    Print out error message
-  else if (input is n)
+
+  do
+    Ask user input "Another number? (y/n)"
+    if (input is not y AND not n)
+      Print out error message
+  while (input is not y AND not n)
+
+  if (input is n)
       finished = true 
 
 Activity 5
 _________________________
+initialize number = 0
+initialize totalLeft = 0
+initialize totalRight = 0
+
+Loop for 10 times
+  number = random number from 1 to 100
+  if ((number Mod 2) = 1)
+    increase totalRight by 1
+    Print out "RIGHT"
+  else
+    increase totalLeft by 1
+    Print our "LEFT"
+
+Print out totalLeft
+Print out totalRight
