@@ -1,14 +1,23 @@
 Activity 1
-_______________
+_________________________
+Ask user input "Input phrase: "
+initialize variable result = input
+for each letter in result
+  if validASCIILetter(letter)
+    if notCapitalLetter(letter)
+      letter = letter - 32
+  else
+    return error message
+Print out result
 
 Activity 2
-_______________
+_________________________
 
 Activity 3
-_______________
+_________________________
 
 Activity 4
-_______________
+_________________________
 
 Activity 5
-_______________
+_________________________
